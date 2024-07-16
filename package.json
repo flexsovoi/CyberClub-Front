@@ -1,0 +1,48 @@
+{
+    "name": "cyberclub-front",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development vite --mode development",
+        "lint": "eslint . --max-warnings=0",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "cross-env": "^7.0.3",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "mobx": "^6.13.0",
+        "mobx-react-lite": "^4.0.7",
+        "pg": "^8.12.0",
+        "pg-hstore": "^2.3.4",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "sequelize": "^6.37.3"
+    },
+    "devDependencies": {
+        "@eslint/compat": "^1.1.0",
+        "@eslint/js": "^9.7.0",
+        "@types/eslint__js": "^8.42.3",
+        "@types/react": "^18.3.3",
+        "@types/react-dom": "^18.3.0",
+        "@vitejs/plugin-react": "^4.3.1",
+        "eslint": "^9.7.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-prettier": "^5.1.3",
+        "eslint-plugin-react": "^7.34.4",
+        "globals": "^15.7.0",
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.7",
+        "prettier": "^3.3.2",
+        "typescript": "^5.5.3",
+        "typescript-eslint": "^7.16.1",
+        "vite": "^5.3.1"
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx,ts,tsx}": [
+            "eslint",
+            "prettier --write --ignore-unknown"
+        ]
+    }
+}
